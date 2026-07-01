@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-app">
@@ -29,7 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="weather-app-city">Toronto</h1>
+            <h1 class="weather-app-city" id="weather-app-city"></h1>
             <p class="weather-app-details">
               Sunday 18:20, mostly sunny
               <br />
@@ -38,7 +39,7 @@
           </div>
           <div class="current-temperature-container">
             <div class="current-temperature-icon">☀️</div>
-            <div class="current-temperature-value">27</div>
+            <div class="current-temperature-value" id="temperature"></div>
             <div class="current-temperature-unit">°C</div>
           </div>
         </div>
